@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="new_Activity_label">New Activity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="back_button_label">BACK</string>
+    <string name="fwd_button_label">FWD</string>
+    <string name="start_service">start service</string>
+    <string name="stop_service">Stop Service</string>
+    <string name="bind_service">Bind Service</string>
+    <string name="unbind_service">UnBind service</string>
+    <string name="bounded_activity">Bounded Activity</string>
+</resources>
