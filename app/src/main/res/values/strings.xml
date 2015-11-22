@@ -11,4 +11,10 @@
     <string name="bind_service">Bind Service</string>
     <string name="unbind_service">UnBind service</string>
     <string name="bounded_activity">Bounded Activity</string>
+    <string name="insert">Insert Record</string>
+    <string name="get_one_record">Get one record</string>
+    <string name="get_all_records_on_age">Records on age</string>
+    <string name="dbactivity">Database Activity</string>
+    <string name="main_activity_label">Main Activity</string>
+    <string name="third_activity_label">Third Activity</string>
 </resources>
