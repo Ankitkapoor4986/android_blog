@@ -34,6 +34,10 @@
             android:name=".activity.BoundedActivity"
             android:label="@string/bounded_activity" />
 
+        <activity
+            android:name=".activity.DBActivity"
+            android:label="@string/dbactivity" />
+
 
     </application>
 

@@ -10,9 +10,11 @@ import android.os.IBinder;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 import com.example.com.myapplication.R;
 import com.example.com.myapplication.binders.BoundedServiceBinder;
+import com.example.com.myapplication.listener.ButtonClickListener;
 import com.example.com.myapplication.service.BoundedService;
 
 
@@ -26,12 +28,26 @@ public class BoundedActivity extends Activity implements ServiceConnection  {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate called");
+        setContentView(R.layout.bounded_activiy_layout);
+        Button backButton = (Button) findViewById(R.id.bounded_activity_back_button);
+        ButtonClickListener<ThirdActivity> backButtonListener = new ButtonClickListener<>(null, this, ThirdActivity.class);
+        backButton.setOnClickListener(backButtonListener);
+        Button fwdButton= (Button) findViewById(R.id.fwd_button_bounded_activity);
+        ButtonClickListener<DBActivity> forwardButtonListener=new ButtonClickListener<>(null,this,DBActivity.class);
+        fwdButton.setOnClickListener(forwardButtonListener);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.bounded_service_menu,menu);
         return true;
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(TAG,"OnResume called");
     }
 
     @Override

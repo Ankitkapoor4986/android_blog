@@ -5,5 +5,9 @@ package com.example.com.myapplication.util;
  */
 public interface Constants {
 
-    String TEXT_VAL="val_of_text";
+    String TEXT_VAL = "val_of_text";
+    String OPEN_BRACKET = "(";
+    String CLOSE_BRACKET = ")";
+    String SPACE=" ";
+    String COMMA=",";
 }
