@@ -22,7 +22,6 @@ import static com.example.com.myapplication.util.Constants.Database.NAME_COL;
  */
 public class DBHelper extends SQLiteOpenHelper {
     private static final String TAG = "DBHelper";
-    private SQLiteDatabase db;
     private static final String DB_NAME = "test_db";
     private static final int VERSION = 5;
 
