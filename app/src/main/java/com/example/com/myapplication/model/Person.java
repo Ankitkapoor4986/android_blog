@@ -5,13 +5,19 @@ package com.example.com.myapplication.model;
  */
 public class Person {
     private String name;
-    private int age;
+    private String attr;
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", attr='" + attr + '\'' +
+                '}';
+    }
 
-
-    public Person(String name, int age) {
+    public Person(String name, String attr) {
         this.name = name;
-        this.age = age;
+        this.attr = attr;
     }
 
     public Person() {
@@ -22,23 +28,19 @@ public class Person {
 
     }
 
-    public int getAge() {
-        return age;
-    }
+
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+
+    public void setAttr(String attr) {
+        this.attr = attr;
     }
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "age=" + age +
-                ", name='" + name + '\'' +
-                '}';
+    public String getAttr() {
+
+        return attr;
     }
 }

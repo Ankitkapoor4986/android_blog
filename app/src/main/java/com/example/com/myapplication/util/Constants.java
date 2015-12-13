@@ -10,4 +10,9 @@ public interface Constants {
     String CLOSE_BRACKET = ")";
     String SPACE=" ";
     String COMMA=",";
+    interface Database{
+        String ATTR_VAL="ABCD";
+        String NAME_COL = "name";
+        String ATTR_COL = "attr";
+    }
 }
