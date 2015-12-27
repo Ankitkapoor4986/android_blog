@@ -14,8 +14,6 @@ import com.example.com.myapplication.listener.ButtonClickListener;
 import com.example.com.myapplication.service.FirstService;
 import com.example.com.myapplication.util.Constants;
 
-import java.util.concurrent.Callable;
-
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private TextView textView;

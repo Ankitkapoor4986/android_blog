@@ -11,12 +11,14 @@ import com.example.com.myapplication.binders.BoundedServiceBinder;
 
 public class BoundedService extends Service {
 
-    private static final String TAG="BoundedService" ;
+    private static final String TAG = "BoundedService";
 
-    private final IBinder boundedServiceBinder=new BoundedServiceBinder(this);
-    @Nullable   
+    private final IBinder boundedServiceBinder = new BoundedServiceBinder(this);
+
+    @Nullable
     @Override
     public IBinder onBind(Intent intent) {
+        Log.d(TAG, "OnBind called");
         return boundedServiceBinder;
     }
 
@@ -40,16 +42,16 @@ public class BoundedService extends Service {
 
     @Override
     public void onDestroy() {
-        Log.d(TAG,"onDestroy");
+        Log.d(TAG, "onDestroy");
         super.onDestroy();
     }
-    
-    public void workToDo(){
+
+    public void workToDo() {
         Log.d(TAG, "**************************");
         Log.d(TAG, "workToDo ");
         Log.d(TAG, "we need to do this work");
         Log.d(TAG, "***************************");
-        
+
     }
 
 

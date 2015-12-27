@@ -1,12 +1,12 @@
 package com.example.com.myapplication.activity;
 
-import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,7 +18,7 @@ import com.example.com.myapplication.listener.ButtonClickListener;
 import com.example.com.myapplication.service.BoundedService;
 
 
-public class BoundedActivity extends Activity implements ServiceConnection  {
+public class BoundedActivity extends AppCompatActivity implements ServiceConnection  {
 
     private static String TAG="BoundedActivity";
     private boolean serviceConnected =false;
