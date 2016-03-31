@@ -12,6 +12,7 @@ import com.example.com.myapplication.binders.BoundedServiceBinder;
 public class BoundedService extends Service {
 
     private static final String TAG = "BoundedService";
+    public static final String FROM_BOUNDED_SERVICE_METHOD = "From Bounded Service method";
 
     private final IBinder boundedServiceBinder = new BoundedServiceBinder(this);
 
@@ -46,11 +47,12 @@ public class BoundedService extends Service {
         super.onDestroy();
     }
 
-    public void workToDo() {
+    public String workToDo() {
         Log.d(TAG, "**************************");
         Log.d(TAG, "workToDo ");
         Log.d(TAG, "we need to do this work");
         Log.d(TAG, "***************************");
+        return FROM_BOUNDED_SERVICE_METHOD;
 
     }
 
